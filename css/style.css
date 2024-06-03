@@ -1,0 +1,118 @@
+ *,*::after ,*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*     colors    */
+
+:root{
+    --defult-color:#212529;
+  --primary-hue:0;
+  --primary-saturation:84%;
+  --primary-lightness:44%
+  --color-primary:hsl(
+    var( --primary-hue),
+    var(--primary-lightness),
+    var(--primary-lightness)
+  );
+  --color-secondry:#37373f;
+  --color-tertiary:#7f7f90;
+  --light-hue:0;
+  --light-saturation:0%;
+  --light-lightness:100%
+  --color-light:hsl(
+    var( --light-hue),
+    var( --light-hue),
+    var(--light-lightness),
+  );
+  --color-light-grey:#eee ;
+  /* ---------fonts-----------*/  
+  --font-defult: "Open Sans", sans-serif;
+  --font-primary: "Amatic SC", sans-serif;
+  --font-secondary:"Inter", sans-serif;
+
+  /*    Animation option */
+  --animation-duration: 400ms;
+}
+body{
+    font-family: var( --font-defult);
+    color:var(defult-color) ;
+}
+a,span{
+    display: inline-block;
+}
+img{
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--font-secondary)
+}
+ul{
+    list-style-type: none;
+}
+.section-bg{
+    background-color: var(--color-light-grey);
+}
+btn{
+   --background-color:transparent ; 
+   --color:var(--color-light);
+   --padding: 5px 12px;
+   --border-width: 2px;
+   --border-color:transparent;
+   --border-radius: 0px;
+   --hover-bg-color:transparent;
+   --hover-color:transparent;
+   --font-size: 16px; 
+
+   padding: var(--padding);
+   border: var(--border-width) solid var(--border-color);
+   border-radius: var(--border-radius);
+   background-color: var(--background-color);
+   color:var(--color);
+   font-size :var(--font-size);
+   cursor: pointer;
+   transition:background-color var(--animation-duration) ,color var(--animation-duration) ;
+}
+.btn:hover{
+    background-color: var(--hover-bg-color);
+    color: var(--hover-color);
+
+}
+/*-------container--------------*/
+.container {
+    --padding: 40px 5px ;
+    --margin-top:0 ;
+    --margin-bottom:0 ;
+    width: 100%;
+    padding: var(--padding);
+    margin-top: var(--margin-top);
+    margin-bottom: var(--margin-bottom);
+    margin-inline: auto;
+background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
